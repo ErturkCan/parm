@@ -374,7 +374,7 @@ policy = PrivacyPolicy(
 **Data Types**: Allergen profiles, dietary restrictions, ingredient info
 **Classification**: SENSITIVE
 **Special Handling**:
-- Critical for health—stricter consent
+- Critical for health - stricter consent
 - Cannot share with third parties
 - User has explicit access to all stored data
 
@@ -466,27 +466,27 @@ for key in vault.keys():
 ## Best Practices
 
 1. **Always use DataVault for sensitive data**
-   - Never store in logs or config
-   - Always reference by key, not value
+  - Never store in logs or config
+  - Always reference by key, not value
 
 2. **Apply anonymization for exports**
-   - Before sending to analytics
-   - Before creating backups
-   - Before sharing reports
+  - Before sending to analytics
+  - Before creating backups
+  - Before sharing reports
 
 3. **Document consent**
-   - Timestamp when user grants/revokes
-   - Keep audit trail for 7 years (GDPR requirement)
+  - Timestamp when user grants/revokes
+  - Keep audit trail for 7 years (GDPR requirement)
 
 4. **Regular audits**
-   - Review access logs monthly
-   - Check for unauthorized access patterns
-   - Validate data retention policies
+  - Review access logs monthly
+  - Check for unauthorized access patterns
+  - Validate data retention policies
 
 5. **Classify data correctly**
-   - Err on the side of SENSITIVE
-   - Upgrade classification if data combines with other data
-   - Review classifications quarterly
+  - Err on the side of SENSITIVE
+  - Upgrade classification if data combines with other data
+  - Review classifications quarterly
 
 ## Limitations
 

@@ -38,31 +38,31 @@ Instead of each product building these independently, they all plug into PARM.
 ## Design Principles
 
 1. **Everything is Event-Driven**
-   - Products communicate through the event bus, not direct calls
-   - Enables loose coupling and independent scaling
-   - Pub/sub with wildcard topic matching
+  - Products communicate through the event bus, not direct calls
+  - Enables loose coupling and independent scaling
+  - Pub/sub with wildcard topic matching
 
 2. **Context is First-Class**
-   - Every decision has access to a unified ContextFrame
-   - Temporal (when), Spatial (where), Relational (who), Domain (what)
-   - Multiple providers, single resolver with conflict resolution
+  - Every decision has access to a unified ContextFrame
+  - Temporal (when), Spatial (where), Relational (who), Domain (what)
+  - Multiple providers, single resolver with conflict resolution
 
 3. **Privacy by Default**
-   - Encrypted vaults for sensitive data (AES-256-GCM)
-   - Policy-based access control at platform level
-   - Audit logs for all operations
-   - Anonymization strategies built-in
+  - Encrypted vaults for sensitive data (AES-256-GCM)
+  - Policy-based access control at platform level
+  - Audit logs for all operations
+  - Anonymization strategies built-in
 
 4. **Agents are Composable**
-   - Small, focused agents that do one thing well
-   - Chain agents together with AgentChain
-   - Fan out to parallel agents with AgentOrchestrator
-   - Automatic retry with exponential backoff
+  - Small, focused agents that do one thing well
+  - Chain agents together with AgentChain
+  - Fan out to parallel agents with AgentOrchestrator
+  - Automatic retry with exponential backoff
 
 5. **The Platform is the Product**
-   - PARM itself is valuable—products are proof it works
-   - Unified telemetry, logging, and observability
-   - Single point for compliance and governance
+  - PARM itself is valuable - products are proof it works
+  - Unified telemetry, logging, and observability
+  - Single point for compliance and governance
 
 ## Quick Start
 
